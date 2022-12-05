@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/e49276d294.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="/img/bunny.png" />
+  <title>Милые фото</title>
+
+  <style>
+@import "https://fonts.fontstorage.com/import/madetheartistscript.css";
+@import "https://fonts.fontstorage.com/import/roboto.css";
+    body {
+      background: rgb(236, 226, 212);
+
+    }
+    .nav-pills {
+      background-color: burlywood;
+    }
+    .act{
+      background-color: rgb(201, 150, 83);
+    }
+
+    
+    h1,h3 {
+      font-family: 'MADE TheArtist Script';
+      font-weight: bold;
+    }
+    h2 {
+      font-family: 'MADE TheArtist Script';
+      font-weight: bold;
+    }
+    h4 {
+      font-family: 'Roboto';
+      font-weight: lighter;
+    }
+    
+    a {
+        text-decoration: none; color: black; 
+      }
+      .block:hover {
+        background-color: rgb(194, 161, 119);
+        text-align: center;
+      }
+			#mouse{
+        position: absolute;
+			}
+
+  </style>
+</head>
+<body>
+  
+  <div class="container-fluid p-0">
+    <h2 class="text-center mt-3">DASHKIN STUDIO очень рады видеть вас</h2>
+
+  </div>
+</div>
+</div>
+<!-- Animation start -->
+<div>
+  <img src="/img/mouse.gif" alt="" id="mouse" />
+ 
+</div>
+<script>
+  let mouse= document.getElementById("mouse");
+  let step = 0;
+
+  let flag = true;
+   
+  function animation() {
+    if (window.innerWidth - 100 > step && flag) {
+      mouse.style.transform = "scaleX(1)";
+      step += 1;
+    } else {
+      flag = step == 0 ? true : false;
+      mouse.style.transform = "scaleX(-1)";
+      step -= 1;
+    }
+                   
+    mouse.style.left = step + "px";
+    
+  }
+
+  setInterval(animation, 15);
+
+</script>
+<!-- Animation end-->
+ 
+<!-- Menu start -->
+
+  <ul class="nav nav-pills nav-fill mr-auto">
+    <li class="nav-item">
+      <a class="nav-link act" aria-current="page" href="#">Главная</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#about">О нас</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Контакты</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://yandex.ru/images/search?from=tabbar&text=%D0%B7%D0%B0%D0%B9%D1%87%D0%B8%D0%BA">Портфолио</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/cost.html">Стоимость работ</a>
+    </li>
+  </ul>
+
+  <!-- Menu end -->
+  <!-- Carousel start -->
+  <div class="container mt-3">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/img/3foto.jpg" class="d-block w-100 mt-4" alt="Море"/>
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <img src="/img/2foto.jpg" class="d-block w-100 mt-4" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+          </div>
+
+      <div class="carousel-item">
+        <img src="/img/1foto.jpg" class="d-block w-100 mt-4" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/img/4foto.jpg" class="d-block w-100 mt-4" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="/img/5foto.jpg" class="d-block w-100 mt-4" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="/img/6foto.jpg" class="d-block w-100 mt-4" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img src="/img/7foto.jpg" class="d-block w-100 mt-4" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                          </div>
+    
+      
+  </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Предыдущий</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Следующий</span>
+    </a>
+  </div>
+</div>
+
+  <!-- Carousel end -->
+
+    <h1 class="text-center mt-4">Ваш лучший детский фотограф</h1>
+
+
+  <div class="container mt-4">
+    <a id="about"></a>
+    <div class="row">
+      <div class="col-md-5 p-7 mt-4">
+        <img src="/img/fotograf.jpg" class="w-100" alt="...">
+      </div>
+      <div class="col-md-7">
+        <h2 class="text-center my-3">ДАВАЙТЕ ПОЗНАКОМИМСЯ!</h2>
+        <h4 class="text-left mt-4">Показать естественные эмоции и настоящую, искреннюю атмосферу - основной приоритет в моей работе.<br>
+          Я люблю настоящую естественную фотографию. О взаимоотношениях, об эмоциях, о чувствах, о любви. От Вас не потребуется никаких натянутых улыбок.<br>
+          Через много лет, открыв семейный альбом, Вы будете возвращаться в те самые счастливые моменты.
+       </h4>
+          <h1 class="text-left mt-4">
+            С любовью, Dashkin Studio </h1>
+      </div>
+    </div>
+  </div>
+  <!-- Contact start -->
+      <div class="container-fluid mt-5">
+        <a id="contact"></a>
+        <h4 class="text-center">Связаться с нами</h4>
+        <p class="text-center block"><a href="tel:+74952605289"> Тел. +7(495) 260-52-89</a></p>
+        <div class="row">
+          <div class="col-md-4 block text-center">
+
+            <p><a href="https://api.whatsapp.com/send/?phone=749545612312&text&type=phone_number&app_absent=0"> WhatsApp</a></p>
+
+          </div>
+
+          <div class="col-md-4 block text-center">
+
+            <p><a href="mailto:dashkin@studio.ru">dashkin@studio.ru</a></p>
+
+          </div>
+          <div class="col-md-4 block text-center">
+
+            <p><a href="https://t.me/dashkinstudio"> Telegram</a></p>
+          </div>
+
+        </div>
+      </div>
+  <!-- Contact end -->
+    <!-- Footer start -->
+    <footer>
+      <div class="container-fluid py-4 mt-5 text-center text-white bg-dark block">© Все права не защищены <script>document.write(new Date().getFullYear())</script>
+
+      </div>
+    </footer>
+    <!-- Footer end -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"
+    ></script>
+    </body>
+    </html>
+    
